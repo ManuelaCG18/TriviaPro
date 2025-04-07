@@ -18,7 +18,7 @@ namespace TriviaPro
 
 
         // propiedades abstractas de las clases hijas
-        public abstract int PuntajeCorrecto { get; }
+        public abstract int PuntajeCorrecto { get; } // por que no tiene el set?????
         public int PuntajeIncorrecto => -2;
 
 

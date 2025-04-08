@@ -252,6 +252,14 @@ namespace TriviaPro
             IniciarNuevoJuego();
         }
 
-        
+        private void progressBarTiempo_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void lblTiempo_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

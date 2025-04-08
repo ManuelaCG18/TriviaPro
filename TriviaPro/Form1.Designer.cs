@@ -108,6 +108,7 @@
             // 
             resources.ApplyResources(this.progressBarTiempo, "progressBarTiempo");
             this.progressBarTiempo.Name = "progressBarTiempo";
+            this.progressBarTiempo.Click += new System.EventHandler(this.progressBarTiempo_Click);
             // 
             // btnIniciar
             // 
@@ -178,6 +179,7 @@
             resources.ApplyResources(this.lblTiempo, "lblTiempo");
             this.lblTiempo.ForeColor = System.Drawing.Color.DeepPink;
             this.lblTiempo.Name = "lblTiempo";
+            this.lblTiempo.Click += new System.EventHandler(this.lblTiempo_Click);
             // 
             // panelOpciones
             // 

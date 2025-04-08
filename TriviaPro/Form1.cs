@@ -68,6 +68,7 @@ namespace TriviaPro
         {
             jugador.Reiniciar();
             preguntasRespondidas.Clear();
+            PreguntaFactory.ReiniciarPreguntasUtilizadas(); // <-- Añade esta línea
             preguntasRestantes = 15;
             listViewPreguntas.Items.Clear();
             panelOpciones.Controls.Clear();
@@ -246,5 +247,7 @@ namespace TriviaPro
         {
             IniciarNuevoJuego();
         }
+
+        
     }
 }

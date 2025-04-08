@@ -8,12 +8,46 @@ namespace TriviaPro
     public static class PreguntaFactory
     {
         private static readonly Random random = new Random();
+        private static List<Pregunta> preguntasUtilizadas = new List<Pregunta>();
+
 
         public static Pregunta CrearPregunta(string categoria, string nivel)
         {
+            var preguntasDisponibles = new List<Pregunta>();
+
+            // Obtener todas las preguntas para la categoría y nivel
+            var todasLasPreguntas = ObtenerTodasLasPreguntas(categoria, nivel);
+
+            // Filtrar para excluir las ya utilizadas
+            preguntasDisponibles = todasLasPreguntas
+                .Where(p => !preguntasUtilizadas.Contains(p))
+                .ToList();
+
+            // Si no hay preguntas disponibles, reiniciamos el contador
+            if (preguntasDisponibles.Count == 0)
+            {
+                preguntasUtilizadas.Clear();
+                preguntasDisponibles = todasLasPreguntas.ToList();
+            }
+
+            if (preguntasDisponibles.Count == 0)
+                throw new InvalidOperationException("No hay preguntas disponibles para la combinación seleccionada");
+
+            // Seleccionar una pregunta aleatoria
+            var preguntaSeleccionada = preguntasDisponibles[random.Next(preguntasDisponibles.Count)];
+
+            // Agregarla a las utilizadas
+            preguntasUtilizadas.Add(preguntaSeleccionada);
+
+            return preguntaSeleccionada;
+        }
+
+
+        private static List<Pregunta> ObtenerTodasLasPreguntas(string categoria, string nivel)
+        {
             var preguntas = new List<Pregunta>();
 
-           if(categoria == "Ciencia")
+            if (categoria == "Ciencia")
             {
                 if(nivel == "Facil")
                 {
@@ -708,10 +742,13 @@ namespace TriviaPro
                 }
             }
 
-            if (preguntas.Count == 0)
-                throw new InvalidOperationException("No hay preguntas disponibles para la combinación seleccionada");
+            
+            return preguntas;
+        }
 
-            return preguntas[random.Next(preguntas.Count)];
+        public static void ReiniciarPreguntasUtilizadas()
+        {
+            preguntasUtilizadas.Clear();
         }
     }
 }

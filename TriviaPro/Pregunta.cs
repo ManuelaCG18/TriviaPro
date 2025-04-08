@@ -36,6 +36,8 @@ namespace TriviaPro
                 throw new ArgumentException("Debe haber entre 2 y 4 opciones");
         }
 
+        
+
         public virtual bool EvaluarRespuesta(int respuestaSeleccionada)
         {
             return respuestaSeleccionada == RespuestaCorrecta;

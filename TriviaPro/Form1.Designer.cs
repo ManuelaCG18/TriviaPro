@@ -130,7 +130,7 @@
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(142, 43);
             this.btnIniciar.TabIndex = 7;
-            this.btnIniciar.Text = "button1";
+            this.btnIniciar.Text = "Iniciar";
             this.btnIniciar.UseVisualStyleBackColor = true;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
@@ -139,7 +139,7 @@
             this.listViewPreguntas.HideSelection = false;
             this.listViewPreguntas.Location = new System.Drawing.Point(661, 114);
             this.listViewPreguntas.Name = "listViewPreguntas";
-            this.listViewPreguntas.Size = new System.Drawing.Size(353, 291);
+            this.listViewPreguntas.Size = new System.Drawing.Size(498, 291);
             this.listViewPreguntas.TabIndex = 8;
             this.listViewPreguntas.UseCompatibleStateImageBehavior = false;
             // 
@@ -157,7 +157,7 @@
             this.btnResponder.Name = "btnResponder";
             this.btnResponder.Size = new System.Drawing.Size(142, 43);
             this.btnResponder.TabIndex = 10;
-            this.btnResponder.Text = "button2";
+            this.btnResponder.Text = "Responder";
             this.btnResponder.UseVisualStyleBackColor = true;
             this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
@@ -167,7 +167,7 @@
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(142, 43);
             this.btnReiniciar.TabIndex = 11;
-            this.btnReiniciar.Text = "button3";
+            this.btnReiniciar.Text = "Reiniciar";
             this.btnReiniciar.UseVisualStyleBackColor = true;
             this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 

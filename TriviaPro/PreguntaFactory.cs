@@ -13,20 +13,20 @@ namespace TriviaPro
         {
             var preguntas = new List<Pregunta>();
 
-            if (categoria == "Ciencia")
+           if(categoria == "Ciencia")
             {
-                if (nivel == "Facil")
+                if(nivel == "Facil")
                 {
                     preguntas.Add(new PreguntaFacil(
-                        "¿Cuál es el planeta más cercano al Sol?", 
+                        "¿Cuál es el planeta más cercano al Sol?",
                         new List<string> { "Mercurio", "Venus", "Marte", "Júpiter" }, 0, "Ciencia"));
 
                     preguntas.Add(new PreguntaFacil(
-                        "¿Cuál es el estado del agua a temperatura ambiente?", 
+                        "¿Cuál es el estado del agua a temperatura ambiente?",
                         new List<string> { "Gaseoso", "Solido", "Liquido", "Plasma" }, 2, "Ciencia"));
 
                     preguntas.Add(new PreguntaFacil(
-                         "¿Qué órgano del cuerpo humano bombea la sangre?", 
+                         "¿Qué órgano del cuerpo humano bombea la sangre?",
                          new List<string> { "Estomago", "Corazon", "Pulmon", "Riñon" }, 1, "Ciencia"));
 
                     preguntas.Add(new PreguntaFacil(
@@ -88,7 +88,6 @@ namespace TriviaPro
                         "¿Cuántas patas tiene una araña?",
                         new List<string> { "Ocho", "Seis", "Diez", "Cuatro" },
                         0, "Ciencia"));
-
                 }
                 else if (nivel == "Medio")
                 {
@@ -167,7 +166,7 @@ namespace TriviaPro
                         new List<string> { "Oxígeno", "Nitrógeno", "Dióxido de carbono", "Hidrógeno" },
                         1, "Ciencia"));
                 }
-                else if (nivel == "Difícil")
+                else if (nivel == "Dificil")
                 {
                     preguntas.Add(new PreguntaDificil(
             "¿Qué científico descubrió la penicilina?",
@@ -244,477 +243,475 @@ namespace TriviaPro
                         new List<string> { "Nuclear", "Geotérmica", "Cinética del agua", "Solar" },
                         2, "Ciencia"));
                 }
-                else if (categoria == "Historia")
+           }
+            else if (categoria == "Historia")
+            {
+                if (nivel == "Facil")
                 {
-                    if (nivel == "Facil")
-                    {
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Quién descubrió América en 1492?",
-                            new List<string> { "Cristóbal Colón", "Hernán Cortés", "Marco Polo", "Vasco da Gama" },
-                            0, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                           "¿Quién descubrió América en 1492?",
+                           new List<string> { "Cristóbal Colón", "Hernán Cortés", "Marco Polo", "Vasco da Gama" },
+                           0, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿En qué país tuvo lugar la Revolución Francesa?",
-                            new List<string> { "Italia", "Alemania", "Francia", "España" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿En qué país tuvo lugar la Revolución Francesa?",
+                        new List<string> { "Italia", "Alemania", "Francia", "España" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cómo se llamaba el primer presidente de Estados Unidos?",
-                            new List<string> { "Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cómo se llamaba el primer presidente de Estados Unidos?",
+                        new List<string> { "Abraham Lincoln", "Thomas Jefferson", "George Washington", "John Adams" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿En qué siglo ocurrió la independencia de la mayoría de países latinoamericanos?",
-                            new List<string> { "Siglo XVIII", "Siglo XIX", "Siglo XVII", "Siglo XX" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿En qué siglo ocurrió la independencia de la mayoría de países latinoamericanos?",
+                        new List<string> { "Siglo XVIII", "Siglo XIX", "Siglo XVII", "Siglo XX" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué civilización construyó las pirámides de Egipto?",
-                            new List<string> { "Romanos", "Mayas", "Egipcios", "Griegos" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué civilización construyó las pirámides de Egipto?",
+                        new List<string> { "Romanos", "Mayas", "Egipcios", "Griegos" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Quién fue el líder del Tercer Reich en Alemania?",
-                            new List<string> { "Joseph Stalin", "Adolf Hitler", "Benito Mussolini", "Winston Churchill" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Quién fue el líder del Tercer Reich en Alemania?",
+                        new List<string> { "Joseph Stalin", "Adolf Hitler", "Benito Mussolini", "Winston Churchill" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿En qué año terminó la Segunda Guerra Mundial?",
-                            new List<string> { "1939", "1945", "1941", "1950" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿En qué año terminó la Segunda Guerra Mundial?",
+                        new List<string> { "1939", "1945", "1941", "1950" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué civilización habitó primero el Imperio del Tahuantinsuyo?",
-                            new List<string> { "Aztecas", "Incas", "Mayas", "Toltecas" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué civilización habitó primero el Imperio del Tahuantinsuyo?",
+                        new List<string> { "Aztecas", "Incas", "Mayas", "Toltecas" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué gran imperio fue gobernado por Julio César?",
-                            new List<string> { "Imperio Bizantino", "Imperio Romano", "Imperio Persa", "Imperio Griego" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué gran imperio fue gobernado por Julio César?",
+                        new List<string> { "Imperio Bizantino", "Imperio Romano", "Imperio Persa", "Imperio Griego" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué famoso líder luchó por la independencia de la India usando la no violencia?",
-                            new List<string> { "Martin Luther King", "Jawaharlal Nehru", "Mahatma Gandhi", "Nelson Mandela" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué famoso líder luchó por la independencia de la India usando la no violencia?",
+                        new List<string> { "Martin Luther King", "Jawaharlal Nehru", "Mahatma Gandhi", "Nelson Mandela" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué muro dividió Alemania durante la Guerra Fría?",
-                            new List<string> { "Muro de Berlín", "Muro de los Lamentos", "Gran Muralla", "Muro de la Paz" },
-                            0, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué muro dividió Alemania durante la Guerra Fría?",
+                        new List<string> { "Muro de Berlín", "Muro de los Lamentos", "Gran Muralla", "Muro de la Paz" },
+                        0, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Quién fue Simón Bolívar?",
-                            new List<string> { "Presidente de México", "Libertador de América", "Rey de España", "Escritor chileno" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Quién fue Simón Bolívar?",
+                        new List<string> { "Presidente de México", "Libertador de América", "Rey de España", "Escritor chileno" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿En qué país se originó el Imperio Otomano?",
-                            new List<string> { "Egipto", "Turquía", "Grecia", "Arabia Saudita" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿En qué país se originó el Imperio Otomano?",
+                        new List<string> { "Egipto", "Turquía", "Grecia", "Arabia Saudita" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué acontecimiento ocurrió el 11 de septiembre de 2001 en EE.UU.?",
-                            new List<string> { "La caída de la bolsa", "Atentados a las Torres Gemelas", "Huracán Katrina", "Fin de la Guerra Fría" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué acontecimiento ocurrió el 11 de septiembre de 2001 en EE.UU.?",
+                        new List<string> { "La caída de la bolsa", "Atentados a las Torres Gemelas", "Huracán Katrina", "Fin de la Guerra Fría" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Quién fue el primer hombre en pisar la Luna?",
-                            new List<string> { "Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "Alan Shepard" },
-                            2, "Historia"));
-                    }
-                    else if (nivel == "Medio")
-                    {
-                        preguntas.Add(new PreguntaMedia(
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Quién fue el primer hombre en pisar la Luna?",
+                        new List<string> { "Yuri Gagarin", "Buzz Aldrin", "Neil Armstrong", "Alan Shepard" },
+                        2, "Historia"));
+                }
+                else if (nivel == "Medio")
+                {
+                    preguntas.Add(new PreguntaMedia(
                             "¿Qué tratado puso fin a la Primera Guerra Mundial?",
                             new List<string> { "Tratado de París", "Tratado de Versalles", "Tratado de Utrecht", "Tratado de Viena" },
                             1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿En qué año ocurrió la Revolución Rusa?",
-                            new List<string> { "1905", "1914", "1917", "1929" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿En qué año ocurrió la Revolución Rusa?",
+                        new List<string> { "1905", "1914", "1917", "1929" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Cuál fue el imperio dominante en América Central antes de la llegada de los españoles?",
-                            new List<string> { "Inca", "Maya", "Romano", "Egipcio" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Cuál fue el imperio dominante en América Central antes de la llegada de los españoles?",
+                        new List<string> { "Inca", "Maya", "Romano", "Egipcio" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Quién fue el emperador más famoso del Imperio Napoleónico?",
-                            new List<string> { "Luis XIV", "Napoleón Bonaparte", "Carlos V", "Enrique VIII" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Quién fue el emperador más famoso del Imperio Napoleónico?",
+                        new List<string> { "Luis XIV", "Napoleón Bonaparte", "Carlos V", "Enrique VIII" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué civilización creó un calendario muy avanzado y preciso?",
-                            new List<string> { "Griega", "Egipcia", "Maya", "Romana" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué civilización creó un calendario muy avanzado y preciso?",
+                        new List<string> { "Griega", "Egipcia", "Maya", "Romana" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Quién fue el conquistador del Imperio Azteca?",
-                            new List<string> { "Francisco Pizarro", "Hernán Cortés", "Cristóbal Colón", "Pedro de Valdivia" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Quién fue el conquistador del Imperio Azteca?",
+                        new List<string> { "Francisco Pizarro", "Hernán Cortés", "Cristóbal Colón", "Pedro de Valdivia" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué país colonizó Brasil?",
-                            new List<string> { "España", "Francia", "Portugal", "Inglaterra" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué país colonizó Brasil?",
+                        new List<string> { "España", "Francia", "Portugal", "Inglaterra" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué evento marcó el inicio de la Edad Moderna?",
-                            new List<string> { "Caída del Imperio Romano", "Descubrimiento de América", "Revolución Francesa", "Invención de la pólvora" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué evento marcó el inicio de la Edad Moderna?",
+                        new List<string> { "Caída del Imperio Romano", "Descubrimiento de América", "Revolución Francesa", "Invención de la pólvora" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué ciudad fue dividida por un muro durante la Guerra Fría?",
-                            new List<string> { "Múnich", "Praga", "Berlín", "Varsovia" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué ciudad fue dividida por un muro durante la Guerra Fría?",
+                        new List<string> { "Múnich", "Praga", "Berlín", "Varsovia" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Cuál fue la causa principal de la Guerra Fría?",
-                            new List<string> { "Disputa territorial", "Conflicto religioso", "Rivalidad ideológica entre EE.UU. y URSS", "Comercio internacional" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Cuál fue la causa principal de la Guerra Fría?",
+                        new List<string> { "Disputa territorial", "Conflicto religioso", "Rivalidad ideológica entre EE.UU. y URSS", "Comercio internacional" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Quién escribió 'El Príncipe', influyendo en la política del Renacimiento?",
-                            new List<string> { "Platón", "Maquiavelo", "Rousseau", "Hobbes" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Quién escribió 'El Príncipe', influyendo en la política del Renacimiento?",
+                        new List<string> { "Platón", "Maquiavelo", "Rousseau", "Hobbes" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué civilización antigua utilizó la escritura cuneiforme?",
-                            new List<string> { "Egipcia", "China", "Sumeria", "Griega" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué civilización antigua utilizó la escritura cuneiforme?",
+                        new List<string> { "Egipcia", "China", "Sumeria", "Griega" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué guerra involucró a los Aliados y las Potencias del Eje?",
-                            new List<string> { "Guerra de Vietnam", "Primera Guerra Mundial", "Segunda Guerra Mundial", "Guerra de Corea" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué guerra involucró a los Aliados y las Potencias del Eje?",
+                        new List<string> { "Guerra de Vietnam", "Primera Guerra Mundial", "Segunda Guerra Mundial", "Guerra de Corea" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué país fue el último en independizarse en América del Sur?",
-                            new List<string> { "Brasil", "Paraguay", "Bolivia", "Surinam" },
-                            3, "Historia"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué país fue el último en independizarse en América del Sur?",
+                        new List<string> { "Brasil", "Paraguay", "Bolivia", "Surinam" },
+                        3, "Historia"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué revolución eliminó la monarquía absoluta en Francia?",
-                            new List<string> { "Revolución Industrial", "Revolución Francesa", "Revolución Rusa", "Revolución de Mayo" },
-                            1, "Historia"));
-                    }
-                    else if (nivel == "Difícil")
-                    {
-                        preguntas.Add(new PreguntaDificil(
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué revolución eliminó la monarquía absoluta en Francia?",
+                        new List<string> { "Revolución Industrial", "Revolución Francesa", "Revolución Rusa", "Revolución de Mayo" },
+                        1, "Historia"));
+                }
+                else if (nivel == "Dificil")
+                {
+                    preguntas.Add(new PreguntaDificil(
                             "¿Qué conflicto bélico es considerado el más largo de la historia?",
                             new List<string> { "Guerra de los Cien Años", "Segunda Guerra Mundial", "Guerra Fría", "Guerra de Vietnam" },
                             0, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué país inició la Reforma Protestante en el siglo XVI?",
-                            new List<string> { "Francia", "Alemania", "Inglaterra", "Italia" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué país inició la Reforma Protestante en el siglo XVI?",
+                        new List<string> { "Francia", "Alemania", "Inglaterra", "Italia" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál fue la principal causa de la caída del Imperio Romano de Occidente?",
-                            new List<string> { "Revoluciones internas", "Crisis económica", "Invasiones bárbaras", "Cristianismo" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál fue la principal causa de la caída del Imperio Romano de Occidente?",
+                        new List<string> { "Revoluciones internas", "Crisis económica", "Invasiones bárbaras", "Cristianismo" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué reino unificó Italia en el siglo XIX?",
-                            new List<string> { "Lombardía", "Cerdeña", "Toscana", "Sicilia" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué reino unificó Italia en el siglo XIX?",
+                        new List<string> { "Lombardía", "Cerdeña", "Toscana", "Sicilia" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Quién fue el zar ruso asesinado durante la Revolución Rusa?",
-                            new List<string> { "Nicolás II", "Pedro el Grande", "Alejandro III", "Iván IV" },
-                            0, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Quién fue el zar ruso asesinado durante la Revolución Rusa?",
+                        new List<string> { "Nicolás II", "Pedro el Grande", "Alejandro III", "Iván IV" },
+                        0, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál fue el líder de la resistencia francesa durante la ocupación nazi?",
-                            new List<string> { "Charles de Gaulle", "Winston Churchill", "Georges Clemenceau", "Napoleón III" },
-                            0, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál fue el líder de la resistencia francesa durante la ocupación nazi?",
+                        new List<string> { "Charles de Gaulle", "Winston Churchill", "Georges Clemenceau", "Napoleón III" },
+                        0, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué tratado reconoció la independencia de las Trece Colonias americanas?",
-                            new List<string> { "Tratado de Versalles", "Tratado de París (1783)", "Tratado de Utrecht", "Tratado de Gante" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué tratado reconoció la independencia de las Trece Colonias americanas?",
+                        new List<string> { "Tratado de Versalles", "Tratado de París (1783)", "Tratado de Utrecht", "Tratado de Gante" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué imperio utilizó una red de caminos llamada 'Qhapaq Ñan'?",
-                            new List<string> { "Azteca", "Maya", "Inca", "Olmeca" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué imperio utilizó una red de caminos llamada 'Qhapaq Ñan'?",
+                        new List<string> { "Azteca", "Maya", "Inca", "Olmeca" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Quién fue el último emperador del Imperio Romano de Oriente (Bizantino)?",
-                            new List<string> { "Justiniano", "Constantino XI", "Teodosio", "Arcadio" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Quién fue el último emperador del Imperio Romano de Oriente (Bizantino)?",
+                        new List<string> { "Justiniano", "Constantino XI", "Teodosio", "Arcadio" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué rey inglés fue ejecutado durante la Revolución Inglesa?",
-                            new List<string> { "Enrique VIII", "Carlos I", "Jorge III", "Ricardo Corazón de León" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué rey inglés fue ejecutado durante la Revolución Inglesa?",
+                        new List<string> { "Enrique VIII", "Carlos I", "Jorge III", "Ricardo Corazón de León" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál fue el nombre del plan económico para la reconstrucción de Europa tras la Segunda Guerra Mundial?",
-                            new List<string> { "Plan Dawes", "Plan Marshall", "New Deal", "Tratado de Maastricht" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál fue el nombre del plan económico para la reconstrucción de Europa tras la Segunda Guerra Mundial?",
+                        new List<string> { "Plan Dawes", "Plan Marshall", "New Deal", "Tratado de Maastricht" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué ciudad fue capital del Imperio Carolingio?",
-                            new List<string> { "París", "Roma", "Aquisgrán", "Viena" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué ciudad fue capital del Imperio Carolingio?",
+                        new List<string> { "París", "Roma", "Aquisgrán", "Viena" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál fue el objetivo principal de las Cruzadas?",
-                            new List<string> { "Expandir territorios", "Conquistar Constantinopla", "Recuperar Tierra Santa", "Convertir musulmanes al cristianismo" },
-                            2, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál fue el objetivo principal de las Cruzadas?",
+                        new List<string> { "Expandir territorios", "Conquistar Constantinopla", "Recuperar Tierra Santa", "Convertir musulmanes al cristianismo" },
+                        2, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué emperador llevó al Imperio Romano a su máxima expansión?",
-                            new List<string> { "César Augusto", "Trajano", "Nerón", "Marco Aurelio" },
-                            1, "Historia"));
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué emperador llevó al Imperio Romano a su máxima expansión?",
+                        new List<string> { "César Augusto", "Trajano", "Nerón", "Marco Aurelio" },
+                        1, "Historia"));
 
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál fue el evento que marcó el inicio de la Edad Contemporánea?",
-                            new List<string> { "Caída de Constantinopla", "Independencia de EE.UU.", "Revolución Francesa", "Unificación de Alemania" },
-                            2, "Historia"));
-                    }
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál fue el evento que marcó el inicio de la Edad Contemporánea?",
+                        new List<string> { "Caída de Constantinopla", "Independencia de EE.UU.", "Revolución Francesa", "Unificación de Alemania" },
+                        2, "Historia"));
                 }
-                else if (categoria == "Cultura General")
+            }
+            else if (categoria == "Cultura General")
+            {
+                if (nivel == "Facil")
                 {
-                    if (nivel == "Facil")
-                    {
-                        preguntas.Add(new PreguntaFacil(
+                    preguntas.Add(new PreguntaFacil(
                             "¿Cuál es el océano más grande del mundo?",
                             new List<string> { "Atlántico", "Índico", "Ártico", "Pacífico" },
                             3, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuántos continentes hay en el mundo?",
-                            new List<string> { "5", "6", "7", "8" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuántos continentes hay en el mundo?",
+                        new List<string> { "5", "6", "7", "8" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es el país con mayor población del mundo?",
-                            new List<string> { "India", "Estados Unidos", "China", "Rusia" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es el país con mayor población del mundo?",
+                        new List<string> { "India", "Estados Unidos", "China", "Rusia" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es el idioma más hablado en el mundo como lengua materna?",
-                            new List<string> { "Inglés", "Árabe", "Chino mandarín", "Español" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es el idioma más hablado en el mundo como lengua materna?",
+                        new List<string> { "Inglés", "Árabe", "Chino mandarín", "Español" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué moneda se utiliza en la mayoría de los países de la Unión Europea?",
-                            new List<string> { "Libra esterlina", "Franco suizo", "Euro", "Dólar" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué moneda se utiliza en la mayoría de los países de la Unión Europea?",
+                        new List<string> { "Libra esterlina", "Franco suizo", "Euro", "Dólar" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuántos días tiene un año bisiesto?",
-                            new List<string> { "364", "365", "366", "367" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuántos días tiene un año bisiesto?",
+                        new List<string> { "364", "365", "366", "367" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué animal es conocido como el 'rey de la selva'?",
-                            new List<string> { "Tigre", "León", "Elefante", "Jaguar" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué animal es conocido como el 'rey de la selva'?",
+                        new List<string> { "Tigre", "León", "Elefante", "Jaguar" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es la capital de México?",
-                            new List<string> { "Monterrey", "Guadalajara", "Ciudad de México", "Puebla" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es la capital de México?",
+                        new List<string> { "Monterrey", "Guadalajara", "Ciudad de México", "Puebla" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué planeta es conocido como el 'planeta rojo'?",
-                            new List<string> { "Venus", "Júpiter", "Marte", "Saturno" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué planeta es conocido como el 'planeta rojo'?",
+                        new List<string> { "Venus", "Júpiter", "Marte", "Saturno" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Quién pintó la Mona Lisa?",
-                            new List<string> { "Miguel Ángel", "Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Quién pintó la Mona Lisa?",
+                        new List<string> { "Miguel Ángel", "Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuántos colores tiene el arcoíris?",
-                            new List<string> { "5", "6", "7", "8" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuántos colores tiene el arcoíris?",
+                        new List<string> { "5", "6", "7", "8" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es el metal más ligero?",
-                            new List<string> { "Cobre", "Litio", "Hierro", "Aluminio" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es el metal más ligero?",
+                        new List<string> { "Cobre", "Litio", "Hierro", "Aluminio" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es el país más grande del mundo en extensión?",
-                            new List<string> { "Canadá", "China", "Estados Unidos", "Rusia" },
-                            3, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es el país más grande del mundo en extensión?",
+                        new List<string> { "Canadá", "China", "Estados Unidos", "Rusia" },
+                        3, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Qué día se celebra la Navidad?",
-                            new List<string> { "31 de diciembre", "1 de enero", "24 de diciembre", "25 de diciembre" },
-                            3, "Cultura General"));
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Qué día se celebra la Navidad?",
+                        new List<string> { "31 de diciembre", "1 de enero", "24 de diciembre", "25 de diciembre" },
+                        3, "Cultura General"));
 
-                        preguntas.Add(new PreguntaFacil(
-                            "¿Cuál es el símbolo químico del oro?",
-                            new List<string> { "Ag", "Au", "Gd", "Hg" },
-                            1, "Cultura General"));
-                    }
-                    else if (nivel == "Medio")
-                    {
-                        preguntas.Add(new PreguntaMedia(
+                    preguntas.Add(new PreguntaFacil(
+                        "¿Cuál es el símbolo químico del oro?",
+                        new List<string> { "Ag", "Au", "Gd", "Hg" },
+                        1, "Cultura General"));
+                }
+                else if (nivel == "Medio")
+                {
+                    preguntas.Add(new PreguntaMedia(
                             "¿Cuál es la capital de Australia?",
                             new List<string> { "Sídney", "Melbourne", "Canberra", "Brisbane" },
                             2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué escritor es autor de Cien años de soledad?",
-                            new List<string> { "Mario Vargas Llosa", "Julio Cortázar", "Gabriel García Márquez", "Pablo Neruda" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué escritor es autor de Cien años de soledad?",
+                        new List<string> { "Mario Vargas Llosa", "Julio Cortázar", "Gabriel García Márquez", "Pablo Neruda" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué científico desarrolló la teoría de la relatividad?",
-                            new List<string> { "Isaac Newton", "Galileo Galilei", "Nikola Tesla", "Albert Einstein" },
-                            3, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué científico desarrolló la teoría de la relatividad?",
+                        new List<string> { "Isaac Newton", "Galileo Galilei", "Nikola Tesla", "Albert Einstein" },
+                        3, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿En qué país se encuentra la torre inclinada de Pisa?",
-                            new List<string> { "Francia", "Grecia", "Italia", "España" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿En qué país se encuentra la torre inclinada de Pisa?",
+                        new List<string> { "Francia", "Grecia", "Italia", "España" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Cuál es el río más largo del mundo?",
-                            new List<string> { "Amazonas", "Nilo", "Yangtsé", "Misisipi" },
-                            0, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Cuál es el río más largo del mundo?",
+                        new List<string> { "Amazonas", "Nilo", "Yangtsé", "Misisipi" },
+                        0, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué país tiene forma de bota en el mapa?",
-                            new List<string> { "Chile", "India", "Italia", "Mexico" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué país tiene forma de bota en el mapa?",
+                        new List<string> { "Chile", "India", "Italia", "Mexico" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿En qué continente está ubicada la cordillera del Himalaya?",
-                            new List<string> { "América", "Asia", "Europa", "África" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿En qué continente está ubicada la cordillera del Himalaya?",
+                        new List<string> { "América", "Asia", "Europa", "África" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué artista pintó el techo de la Capilla Sixtina?",
-                            new List<string> { "Leonardo da Vinci", "Rafael", "Miguel Ángel", "Donatello" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué artista pintó el techo de la Capilla Sixtina?",
+                        new List<string> { "Leonardo da Vinci", "Rafael", "Miguel Ángel", "Donatello" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué gas necesitan las plantas para realizar la fotosíntesis?",
-                            new List<string> { "Oxígeno", "Hidrógeno", "Dióxido de carbono", "Nitrógeno" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué gas necesitan las plantas para realizar la fotosíntesis?",
+                        new List<string> { "Oxígeno", "Hidrógeno", "Dióxido de carbono", "Nitrógeno" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Cuál es la capital de Canadá?",
-                            new List<string> { "Toronto", "Vancouver", "Ottawa", "Montreal" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Cuál es la capital de Canadá?",
+                        new List<string> { "Toronto", "Vancouver", "Ottawa", "Montreal" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué país es famoso por el Taj Mahal?",
-                            new List<string> { "Arabia Saudita", "India", "Egipto", "Tailandia" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué país es famoso por el Taj Mahal?",
+                        new List<string> { "Arabia Saudita", "India", "Egipto", "Tailandia" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué filósofo griego fue maestro de Alejandro Magno?",
-                            new List<string> { "Platón", "Aristóteles", "Sócrates", "Pitágoras" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué filósofo griego fue maestro de Alejandro Magno?",
+                        new List<string> { "Platón", "Aristóteles", "Sócrates", "Pitágoras" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué país tiene más premios Nobel de la Paz?",
-                            new List<string> { "Noruega", "Alemania", "Estados Unidos", "Japón" },
-                            2, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué país tiene más premios Nobel de la Paz?",
+                        new List<string> { "Noruega", "Alemania", "Estados Unidos", "Japón" },
+                        2, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Cuál es el idioma oficial de Brasil?",
-                            new List<string> { "Español", "Portugués", "Inglés", "Francés" },
-                            1, "Cultura General"));
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Cuál es el idioma oficial de Brasil?",
+                        new List<string> { "Español", "Portugués", "Inglés", "Francés" },
+                        1, "Cultura General"));
 
-                        preguntas.Add(new PreguntaMedia(
-                            "¿Qué instrumento mide los terremotos?",
-                            new List<string> { "Telescopio", "Sismógrafo", "Termómetro", "Barómetro" },
-                            1, "Cultura General"));
-                    }
-                    else if (nivel == "Difícil")
-                    {
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es el país más joven del mundo reconocido oficialmente?",
-                            new List<string> { "Kosovo", "Sudán del Sur", "Timor Oriental", "Eritrea" },
-                            1, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué escritor ganó el Premio Nobel de Literatura en 2021?",
-                            new List<string> { "Kazuo Ishiguro", "Olga Tokarczuk", "Abdulrazak Gurnah", "Peter Handke" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué elemento químico tiene el número atómico 92?",
-                            new List<string> { "Uranio", "Plomo", "Mercurio", "Radio" },
-                            0, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es el idioma con más palabras registradas en su diccionario?",
-                            new List<string> { "Español", "Alemán", "Francés", "Inglés" },
-                            3, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué ciudad es considerada la más antigua habitada continuamente?",
-                            new List<string> { "Atenas", "Jerusalén", "Damasco", "El Cairo" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es el lago navegable más alto del mundo?",
-                            new List<string> { "Titicaca", "Baikal", "Victoria", "Ness" },
-                            0, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué país tiene la bandera más antigua aún en uso?",
-                            new List<string> { "Reino Unido", "Japón", "Dinamarca", "China" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Quién compuso la ópera La flauta mágica?",
-                            new List<string> { "Beethoven", "Mozart", "Bach", "Chopin" },
-                            1, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué filósofo es considerado el padre del empirismo moderno?",
-                            new List<string> { "Descartes", "Hume", "Locke", "Kant" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué científico propuso la clasificación binomial para los seres vivos?",
-                            new List<string> { "Darwin", "Lamarck", "Linneo", "Mendel" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es la montaña más alta fuera de Asia?",
-                            new List<string> { "Aconcagua", "Kilimanjaro", "Denali", "Elbrús" },
-                            0, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Qué compositor es autor de la obra Carmina Burana?",
-                            new List<string> { "Wagner", "Carl Orff", "Mahler", "Schubert" },
-                            1, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es el gentilicio de alguien nacido en Catar?",
-                            new List<string> { "Catarense", "Catarino", "Catarí", "Cataríano" },
-                            2, "Cultura General"));
-
-                        preguntas.Add(new PreguntaDificil(
-                            "¿Cuál es el país con más islas en el mundo?",
-                            new List<string> { "Filipinas", "Indonesia", "Canadá", "Suecia" },
-                            3, "Cultura General"));
-                    }
+                    preguntas.Add(new PreguntaMedia(
+                        "¿Qué instrumento mide los terremotos?",
+                        new List<string> { "Telescopio", "Sismógrafo", "Termómetro", "Barómetro" },
+                        1, "Cultura General"));
                 }
+                else if (nivel == "Dificil")
+                {
+                    preguntas.Add(new PreguntaDificil(
+                             "¿Cuál es el país más joven del mundo reconocido oficialmente?",
+                             new List<string> { "Kosovo", "Sudán del Sur", "Timor Oriental", "Eritrea" },
+                             1, "Cultura General"));
 
-                if (preguntas.Count == 0)
-                    throw new InvalidOperationException("No hay preguntas disponibles para la combinación seleccionada");
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué escritor ganó el Premio Nobel de Literatura en 2021?",
+                        new List<string> { "Kazuo Ishiguro", "Olga Tokarczuk", "Abdulrazak Gurnah", "Peter Handke" },
+                        2, "Cultura General"));
 
-                return preguntas[random.Next(preguntas.Count)];
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué elemento químico tiene el número atómico 92?",
+                        new List<string> { "Uranio", "Plomo", "Mercurio", "Radio" },
+                        0, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál es el idioma con más palabras registradas en su diccionario?",
+                        new List<string> { "Español", "Alemán", "Francés", "Inglés" },
+                        3, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué ciudad es considerada la más antigua habitada continuamente?",
+                        new List<string> { "Atenas", "Jerusalén", "Damasco", "El Cairo" },
+                        2, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál es el lago navegable más alto del mundo?",
+                        new List<string> { "Titicaca", "Baikal", "Victoria", "Ness" },
+                        0, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué país tiene la bandera más antigua aún en uso?",
+                        new List<string> { "Reino Unido", "Japón", "Dinamarca", "China" },
+                        2, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Quién compuso la ópera La flauta mágica?",
+                        new List<string> { "Beethoven", "Mozart", "Bach", "Chopin" },
+                        1, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué filósofo es considerado el padre del empirismo moderno?",
+                        new List<string> { "Descartes", "Hume", "Locke", "Kant" },
+                        2, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué científico propuso la clasificación binomial para los seres vivos?",
+                        new List<string> { "Darwin", "Lamarck", "Linneo", "Mendel" },
+                        2, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál es la montaña más alta fuera de Asia?",
+                        new List<string> { "Aconcagua", "Kilimanjaro", "Denali", "Elbrús" },
+                        0, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Qué compositor es autor de la obra Carmina Burana?",
+                        new List<string> { "Wagner", "Carl Orff", "Mahler", "Schubert" },
+                        1, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál es el gentilicio de alguien nacido en Catar?",
+                        new List<string> { "Catarense", "Catarino", "Catarí", "Cataríano" },
+                        2, "Cultura General"));
+
+                    preguntas.Add(new PreguntaDificil(
+                        "¿Cuál es el país con más islas en el mundo?",
+                        new List<string> { "Filipinas", "Indonesia", "Canadá", "Suecia" },
+                        3, "Cultura General"));
+                }
             }
 
-        
+            if (preguntas.Count == 0)
+                throw new InvalidOperationException("No hay preguntas disponibles para la combinación seleccionada");
+
+            return preguntas[random.Next(preguntas.Count)];
         }
     }
 }

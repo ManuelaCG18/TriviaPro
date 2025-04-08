@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.cmbCategoria = new System.Windows.Forms.ComboBox();
             this.lblPregunta = new System.Windows.Forms.Label();
             this.radioButton1 = new System.Windows.Forms.RadioButton();
@@ -48,68 +49,54 @@
             this.lblPreguntasRestantes = new System.Windows.Forms.Label();
             this.lblTiempo = new System.Windows.Forms.Label();
             this.panelOpciones = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
             this.panelOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // cmbCategoria
             // 
+            this.cmbCategoria.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmbCategoria.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(72, 47);
+            resources.ApplyResources(this.cmbCategoria, "cmbCategoria");
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(149, 28);
-            this.cmbCategoria.TabIndex = 0;
             // 
             // lblPregunta
             // 
-            this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(41, 126);
+            resources.ApplyResources(this.lblPregunta, "lblPregunta");
+            this.lblPregunta.ForeColor = System.Drawing.Color.Crimson;
             this.lblPregunta.Name = "lblPregunta";
-            this.lblPregunta.Size = new System.Drawing.Size(51, 20);
-            this.lblPregunta.TabIndex = 1;
-            this.lblPregunta.Text = "label1";
             // 
             // radioButton1
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(83, 5);
+            resources.ApplyResources(this.radioButton1, "radioButton1");
+            this.radioButton1.ForeColor = System.Drawing.Color.Crimson;
             this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(126, 24);
-            this.radioButton1.TabIndex = 2;
             this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
             this.radioButton1.UseVisualStyleBackColor = true;
             // 
             // radioButton2
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(83, 52);
+            resources.ApplyResources(this.radioButton2, "radioButton2");
+            this.radioButton2.ForeColor = System.Drawing.Color.Crimson;
             this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(126, 24);
-            this.radioButton2.TabIndex = 3;
             this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
             this.radioButton2.UseVisualStyleBackColor = true;
             // 
             // radioButton3
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(83, 99);
+            resources.ApplyResources(this.radioButton3, "radioButton3");
+            this.radioButton3.ForeColor = System.Drawing.Color.Crimson;
             this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(126, 24);
-            this.radioButton3.TabIndex = 4;
             this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
             this.radioButton3.UseVisualStyleBackColor = true;
             // 
             // radioButton4
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(83, 143);
+            resources.ApplyResources(this.radioButton4, "radioButton4");
+            this.radioButton4.ForeColor = System.Drawing.Color.Crimson;
             this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(126, 24);
-            this.radioButton4.TabIndex = 5;
             this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
             this.radioButton4.UseVisualStyleBackColor = true;
             // 
             // timerPregunta
@@ -119,102 +106,78 @@
             // 
             // progressBarTiempo
             // 
-            this.progressBarTiempo.Location = new System.Drawing.Point(45, 389);
+            resources.ApplyResources(this.progressBarTiempo, "progressBarTiempo");
             this.progressBarTiempo.Name = "progressBarTiempo";
-            this.progressBarTiempo.Size = new System.Drawing.Size(334, 23);
-            this.progressBarTiempo.TabIndex = 6;
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(456, 39);
+            this.btnIniciar.BackColor = System.Drawing.Color.Crimson;
+            resources.ApplyResources(this.btnIniciar, "btnIniciar");
             this.btnIniciar.Name = "btnIniciar";
-            this.btnIniciar.Size = new System.Drawing.Size(142, 43);
-            this.btnIniciar.TabIndex = 7;
-            this.btnIniciar.Text = "Iniciar";
-            this.btnIniciar.UseVisualStyleBackColor = true;
+            this.btnIniciar.UseVisualStyleBackColor = false;
             this.btnIniciar.Click += new System.EventHandler(this.btnIniciar_Click);
             // 
             // listViewPreguntas
             // 
+            this.listViewPreguntas.ForeColor = System.Drawing.Color.Crimson;
             this.listViewPreguntas.HideSelection = false;
-            this.listViewPreguntas.Location = new System.Drawing.Point(582, 126);
+            resources.ApplyResources(this.listViewPreguntas, "listViewPreguntas");
             this.listViewPreguntas.Name = "listViewPreguntas";
-            this.listViewPreguntas.Size = new System.Drawing.Size(555, 382);
-            this.listViewPreguntas.TabIndex = 8;
             this.listViewPreguntas.UseCompatibleStateImageBehavior = false;
             // 
             // cmbNivel
             // 
+            this.cmbNivel.BackColor = System.Drawing.SystemColors.ControlLightLight;
+            this.cmbNivel.ForeColor = System.Drawing.Color.MediumVioletRed;
             this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(258, 47);
+            resources.ApplyResources(this.cmbNivel, "cmbNivel");
             this.cmbNivel.Name = "cmbNivel";
-            this.cmbNivel.Size = new System.Drawing.Size(153, 28);
-            this.cmbNivel.TabIndex = 9;
             // 
             // btnResponder
             // 
-            this.btnResponder.Location = new System.Drawing.Point(382, 201);
+            this.btnResponder.BackColor = System.Drawing.Color.Plum;
+            resources.ApplyResources(this.btnResponder, "btnResponder");
             this.btnResponder.Name = "btnResponder";
-            this.btnResponder.Size = new System.Drawing.Size(142, 43);
-            this.btnResponder.TabIndex = 10;
-            this.btnResponder.Text = "Responder";
-            this.btnResponder.UseVisualStyleBackColor = true;
+            this.btnResponder.UseVisualStyleBackColor = false;
             this.btnResponder.Click += new System.EventHandler(this.btnResponder_Click);
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new System.Drawing.Point(382, 279);
+            this.btnReiniciar.BackColor = System.Drawing.Color.LightPink;
+            resources.ApplyResources(this.btnReiniciar, "btnReiniciar");
             this.btnReiniciar.Name = "btnReiniciar";
-            this.btnReiniciar.Size = new System.Drawing.Size(142, 43);
-            this.btnReiniciar.TabIndex = 11;
-            this.btnReiniciar.Text = "Reiniciar";
-            this.btnReiniciar.UseVisualStyleBackColor = true;
+            this.btnReiniciar.UseVisualStyleBackColor = false;
             this.btnReiniciar.Click += new System.EventHandler(this.btnReiniciar_Click);
             // 
             // lblPuntaje
             // 
-            this.lblPuntaje.AutoSize = true;
-            this.lblPuntaje.Location = new System.Drawing.Point(175, 544);
+            resources.ApplyResources(this.lblPuntaje, "lblPuntaje");
+            this.lblPuntaje.ForeColor = System.Drawing.Color.DeepPink;
             this.lblPuntaje.Name = "lblPuntaje";
-            this.lblPuntaje.Size = new System.Drawing.Size(51, 20);
-            this.lblPuntaje.TabIndex = 12;
-            this.lblPuntaje.Text = "label1";
             // 
             // lblCorrectas
             // 
-            this.lblCorrectas.AutoSize = true;
-            this.lblCorrectas.Location = new System.Drawing.Point(44, 544);
+            resources.ApplyResources(this.lblCorrectas, "lblCorrectas");
+            this.lblCorrectas.ForeColor = System.Drawing.Color.DeepPink;
             this.lblCorrectas.Name = "lblCorrectas";
-            this.lblCorrectas.Size = new System.Drawing.Size(51, 20);
-            this.lblCorrectas.TabIndex = 13;
-            this.lblCorrectas.Text = "label1";
             // 
             // lblIncorrectas
             // 
-            this.lblIncorrectas.AutoSize = true;
-            this.lblIncorrectas.Location = new System.Drawing.Point(487, 544);
+            resources.ApplyResources(this.lblIncorrectas, "lblIncorrectas");
+            this.lblIncorrectas.ForeColor = System.Drawing.Color.DeepPink;
             this.lblIncorrectas.Name = "lblIncorrectas";
-            this.lblIncorrectas.Size = new System.Drawing.Size(51, 20);
-            this.lblIncorrectas.TabIndex = 14;
-            this.lblIncorrectas.Text = "label1";
             // 
             // lblPreguntasRestantes
             // 
-            this.lblPreguntasRestantes.AutoSize = true;
-            this.lblPreguntasRestantes.Location = new System.Drawing.Point(331, 543);
+            resources.ApplyResources(this.lblPreguntasRestantes, "lblPreguntasRestantes");
+            this.lblPreguntasRestantes.ForeColor = System.Drawing.Color.DeepPink;
             this.lblPreguntasRestantes.Name = "lblPreguntasRestantes";
-            this.lblPreguntasRestantes.Size = new System.Drawing.Size(51, 20);
-            this.lblPreguntasRestantes.TabIndex = 15;
-            this.lblPreguntasRestantes.Text = "label1";
             // 
             // lblTiempo
             // 
-            this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(419, 392);
+            resources.ApplyResources(this.lblTiempo, "lblTiempo");
+            this.lblTiempo.ForeColor = System.Drawing.Color.DeepPink;
             this.lblTiempo.Name = "lblTiempo";
-            this.lblTiempo.Size = new System.Drawing.Size(51, 20);
-            this.lblTiempo.TabIndex = 16;
-            this.lblTiempo.Text = "label1";
             // 
             // panelOpciones
             // 
@@ -222,16 +185,21 @@
             this.panelOpciones.Controls.Add(this.radioButton3);
             this.panelOpciones.Controls.Add(this.radioButton2);
             this.panelOpciones.Controls.Add(this.radioButton1);
-            this.panelOpciones.Location = new System.Drawing.Point(45, 168);
+            resources.ApplyResources(this.panelOpciones, "panelOpciones");
             this.panelOpciones.Name = "panelOpciones";
-            this.panelOpciones.Size = new System.Drawing.Size(287, 177);
-            this.panelOpciones.TabIndex = 17;
+            // 
+            // label1
+            // 
+            resources.ApplyResources(this.label1, "label1");
+            this.label1.ForeColor = System.Drawing.Color.DeepPink;
+            this.label1.Name = "label1";
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1183, 601);
+            this.BackColor = System.Drawing.Color.LightGoldenrodYellow;
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.panelOpciones);
             this.Controls.Add(this.lblTiempo);
             this.Controls.Add(this.lblPreguntasRestantes);
@@ -247,7 +215,6 @@
             this.Controls.Add(this.lblPregunta);
             this.Controls.Add(this.cmbCategoria);
             this.Name = "Form1";
-            this.Text = "Form1";
             this.panelOpciones.ResumeLayout(false);
             this.panelOpciones.PerformLayout();
             this.ResumeLayout(false);
@@ -276,6 +243,7 @@
         private System.Windows.Forms.Label lblPreguntasRestantes;
         private System.Windows.Forms.Label lblTiempo;
         private System.Windows.Forms.Panel panelOpciones;
+        private System.Windows.Forms.Label label1;
     }
 }
 

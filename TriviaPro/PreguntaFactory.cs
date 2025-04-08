@@ -30,8 +30,7 @@ namespace TriviaPro
                 preguntasDisponibles = todasLasPreguntas.ToList();
             }
 
-            if (preguntasDisponibles.Count == 0)
-                throw new InvalidOperationException("No hay preguntas disponibles para la combinación seleccionada");
+            
 
             // Seleccionar una pregunta aleatoria
             var preguntaSeleccionada = preguntasDisponibles[random.Next(preguntasDisponibles.Count)];

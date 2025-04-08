@@ -8,7 +8,7 @@ namespace TriviaPro
 {
     public abstract class Pregunta
     {
-        // propiedades de pregunta
+        
         public string Texto {  get; protected set; }
         public List<string> Opciones { get; protected set; }
         public int RespuestaCorrecta { get; protected set; }
@@ -17,12 +17,12 @@ namespace TriviaPro
         public int TiempoLimite { get; protected set; }
 
 
-        // propiedades abstractas de las clases hijas
-        public abstract int PuntajeCorrecto { get; } // por que no tiene el set?????
+        
+        public abstract int PuntajeCorrecto { get; } 
         public int PuntajeIncorrecto => -2;
 
 
-        // constructor
+        
         public Pregunta(string texto, List<string> opciones, int respuestaCorrecta, string categoria, string nivel)
         {
             Texto = texto ?? throw new ArgumentNullException(nameof(texto));

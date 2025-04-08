@@ -54,15 +54,15 @@
             // cmbCategoria
             // 
             this.cmbCategoria.FormattingEnabled = true;
-            this.cmbCategoria.Location = new System.Drawing.Point(133, 31);
+            this.cmbCategoria.Location = new System.Drawing.Point(72, 47);
             this.cmbCategoria.Name = "cmbCategoria";
-            this.cmbCategoria.Size = new System.Drawing.Size(121, 28);
+            this.cmbCategoria.Size = new System.Drawing.Size(149, 28);
             this.cmbCategoria.TabIndex = 0;
             // 
             // lblPregunta
             // 
             this.lblPregunta.AutoSize = true;
-            this.lblPregunta.Location = new System.Drawing.Point(44, 139);
+            this.lblPregunta.Location = new System.Drawing.Point(41, 126);
             this.lblPregunta.Name = "lblPregunta";
             this.lblPregunta.Size = new System.Drawing.Size(51, 20);
             this.lblPregunta.TabIndex = 1;
@@ -119,14 +119,14 @@
             // 
             // progressBarTiempo
             // 
-            this.progressBarTiempo.Location = new System.Drawing.Point(437, 52);
+            this.progressBarTiempo.Location = new System.Drawing.Point(45, 389);
             this.progressBarTiempo.Name = "progressBarTiempo";
-            this.progressBarTiempo.Size = new System.Drawing.Size(100, 23);
+            this.progressBarTiempo.Size = new System.Drawing.Size(334, 23);
             this.progressBarTiempo.TabIndex = 6;
             // 
             // btnIniciar
             // 
-            this.btnIniciar.Location = new System.Drawing.Point(382, 154);
+            this.btnIniciar.Location = new System.Drawing.Point(456, 39);
             this.btnIniciar.Name = "btnIniciar";
             this.btnIniciar.Size = new System.Drawing.Size(142, 43);
             this.btnIniciar.TabIndex = 7;
@@ -137,23 +137,23 @@
             // listViewPreguntas
             // 
             this.listViewPreguntas.HideSelection = false;
-            this.listViewPreguntas.Location = new System.Drawing.Point(661, 114);
+            this.listViewPreguntas.Location = new System.Drawing.Point(582, 126);
             this.listViewPreguntas.Name = "listViewPreguntas";
-            this.listViewPreguntas.Size = new System.Drawing.Size(498, 291);
+            this.listViewPreguntas.Size = new System.Drawing.Size(555, 382);
             this.listViewPreguntas.TabIndex = 8;
             this.listViewPreguntas.UseCompatibleStateImageBehavior = false;
             // 
             // cmbNivel
             // 
             this.cmbNivel.FormattingEnabled = true;
-            this.cmbNivel.Location = new System.Drawing.Point(133, 89);
+            this.cmbNivel.Location = new System.Drawing.Point(258, 47);
             this.cmbNivel.Name = "cmbNivel";
-            this.cmbNivel.Size = new System.Drawing.Size(121, 28);
+            this.cmbNivel.Size = new System.Drawing.Size(153, 28);
             this.cmbNivel.TabIndex = 9;
             // 
             // btnResponder
             // 
-            this.btnResponder.Location = new System.Drawing.Point(382, 220);
+            this.btnResponder.Location = new System.Drawing.Point(382, 201);
             this.btnResponder.Name = "btnResponder";
             this.btnResponder.Size = new System.Drawing.Size(142, 43);
             this.btnResponder.TabIndex = 10;
@@ -163,7 +163,7 @@
             // 
             // btnReiniciar
             // 
-            this.btnReiniciar.Location = new System.Drawing.Point(382, 292);
+            this.btnReiniciar.Location = new System.Drawing.Point(382, 279);
             this.btnReiniciar.Name = "btnReiniciar";
             this.btnReiniciar.Size = new System.Drawing.Size(142, 43);
             this.btnReiniciar.TabIndex = 11;
@@ -174,7 +174,7 @@
             // lblPuntaje
             // 
             this.lblPuntaje.AutoSize = true;
-            this.lblPuntaje.Location = new System.Drawing.Point(30, 397);
+            this.lblPuntaje.Location = new System.Drawing.Point(175, 544);
             this.lblPuntaje.Name = "lblPuntaje";
             this.lblPuntaje.Size = new System.Drawing.Size(51, 20);
             this.lblPuntaje.TabIndex = 12;
@@ -183,7 +183,7 @@
             // lblCorrectas
             // 
             this.lblCorrectas.AutoSize = true;
-            this.lblCorrectas.Location = new System.Drawing.Point(30, 439);
+            this.lblCorrectas.Location = new System.Drawing.Point(44, 544);
             this.lblCorrectas.Name = "lblCorrectas";
             this.lblCorrectas.Size = new System.Drawing.Size(51, 20);
             this.lblCorrectas.TabIndex = 13;
@@ -192,7 +192,7 @@
             // lblIncorrectas
             // 
             this.lblIncorrectas.AutoSize = true;
-            this.lblIncorrectas.Location = new System.Drawing.Point(30, 479);
+            this.lblIncorrectas.Location = new System.Drawing.Point(487, 544);
             this.lblIncorrectas.Name = "lblIncorrectas";
             this.lblIncorrectas.Size = new System.Drawing.Size(51, 20);
             this.lblIncorrectas.TabIndex = 14;
@@ -201,7 +201,7 @@
             // lblPreguntasRestantes
             // 
             this.lblPreguntasRestantes.AutoSize = true;
-            this.lblPreguntasRestantes.Location = new System.Drawing.Point(355, 397);
+            this.lblPreguntasRestantes.Location = new System.Drawing.Point(331, 543);
             this.lblPreguntasRestantes.Name = "lblPreguntasRestantes";
             this.lblPreguntasRestantes.Size = new System.Drawing.Size(51, 20);
             this.lblPreguntasRestantes.TabIndex = 15;
@@ -210,7 +210,7 @@
             // lblTiempo
             // 
             this.lblTiempo.AutoSize = true;
-            this.lblTiempo.Location = new System.Drawing.Point(355, 439);
+            this.lblTiempo.Location = new System.Drawing.Point(419, 392);
             this.lblTiempo.Name = "lblTiempo";
             this.lblTiempo.Size = new System.Drawing.Size(51, 20);
             this.lblTiempo.TabIndex = 16;

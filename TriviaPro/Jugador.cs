@@ -8,7 +8,7 @@ namespace TriviaPro
 {
     public class Jugador
     {
-        public string Nombre { get; set; }
+       
         public int Puntaje { get; private set; }
         public int PreguntasCorrectas { get; private set; }
         public int PreguntasIncorrectas { get; private set; }
@@ -16,7 +16,7 @@ namespace TriviaPro
         public void ActualizarPuntaje(int puntos)
         {
             Puntaje += puntos;
-            if (Puntaje < 0) Puntaje = 0; // El puntaje mínimo es 0
+            if (Puntaje < 0) Puntaje = 0; 
 
             if (puntos > 0) PreguntasCorrectas++;
             else PreguntasIncorrectas++;

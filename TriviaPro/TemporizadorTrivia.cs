@@ -5,6 +5,7 @@ namespace TriviaPro
 {
     public class TemporizadorTrivia
     {
+        /*
         private Timer timer;
         private int tiempoRestante;
         private Action onTimeUp;
@@ -37,5 +38,6 @@ namespace TriviaPro
             tiempoRestante = nuevoTiempo;
             timer.Stop();
         }
+        */
     }
 }

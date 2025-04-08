@@ -32,7 +32,7 @@ namespace TriviaPro
 
         private void ConfigurarInterfaz()
         {
-            // Configurar ListView
+            
             listViewPreguntas.View = View.Details;
             listViewPreguntas.Columns.Add("Pregunta", 300);
             listViewPreguntas.Columns.Add("Tu respuesta", 150);
@@ -40,15 +40,15 @@ namespace TriviaPro
             listViewPreguntas.Columns.Add("Puntos", 60);
             listViewPreguntas.FullRowSelect = true;
 
-            // Configurar Timer
+           
             timerPregunta.Interval = 1000; // 1 segundo
             timerPregunta.Tick += timerPregunta_Tick;
 
-            // Configurar ComboBoxes
+           
             cmbCategoria.Items.AddRange(new[] { "Ciencia", "Historia", "Cultura General" });
             cmbNivel.Items.AddRange(new[] { "Facil", "Medio", "Dificil" });
 
-            // Estilo del Panel de opciones
+           
             panelOpciones.AutoScroll = true;
             panelOpciones.BorderStyle = BorderStyle.FixedSingle;
         }
@@ -68,7 +68,7 @@ namespace TriviaPro
         {
             jugador.Reiniciar();
             preguntasRespondidas.Clear();
-            PreguntaFactory.ReiniciarPreguntasUtilizadas(); // <-- Añade esta línea
+            PreguntaFactory.ReiniciarPreguntasUtilizadas(); 
             preguntasRestantes = 15;
             listViewPreguntas.Items.Clear();
             panelOpciones.Controls.Clear();
@@ -141,7 +141,7 @@ namespace TriviaPro
                     tiempoRestante = TIEMPO_DIFICIL;
                     break;
                 default:
-                    tiempoRestante = 15; // Valor por defecto
+                    tiempoRestante = 15; 
                     break;
             }
 
@@ -196,24 +196,28 @@ namespace TriviaPro
 
         private void ProcesarRespuesta(int respuesta)
         {
+
             bool esCorrecta = preguntaActual.EvaluarRespuesta(respuesta);
             int puntos = esCorrecta ? preguntaActual.PuntajeCorrecto : preguntaActual.PuntajeIncorrecto;
             jugador.ActualizarPuntaje(puntos);
             preguntasRespondidas.Add(preguntaActual);
 
-            // Agregar al ListView
+            
+
             var item = new ListViewItem(preguntaActual.Texto);
             item.SubItems.Add(preguntaActual.Opciones[respuesta]);
             item.SubItems.Add(esCorrecta ? "Sí" : "No");
             item.SubItems.Add(puntos.ToString());
 
-            // Color de fondo según si fue correcta
+           
+
             item.BackColor = esCorrecta ? Color.LightGreen : Color.LightPink;
 
             listViewPreguntas.Items.Add(item);
             item.EnsureVisible(); // Scroll automático
 
-            // Retroalimentación
+           
+
             string mensaje = esCorrecta ? "¡Correcto!" :
                 $"Incorrecto. La respuesta correcta era: {preguntaActual.Opciones[preguntaActual.RespuestaCorrecta]}";
 
